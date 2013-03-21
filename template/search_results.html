@@ -26,7 +26,7 @@
 		</div>
 	<!-- ENDIF -->
 
-		<div class="pull-right p-pagination">
+		<div class="pull-right pagination">
 			<span class="label">{SEARCH_MATCHES}</span><!-- IF PAGINATION --> &bull; <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}"><span class="label">{PAGE_NUMBER}</span></a> &bull; <span class="label">{PAGINATION}</span><!-- ELSE --> &bull; <span class="label">{PAGE_NUMBER}</span><!-- ENDIF -->
 		</div>
 	</div>
@@ -63,7 +63,7 @@
 						<a href="{searchresults.U_VIEW_TOPIC}" class="topictitle">{searchresults.TOPIC_TITLE}</a> {searchresults.ATTACH_ICON_IMG}
 						<!-- IF searchresults.S_TOPIC_UNAPPROVED or searchresults.S_POSTS_UNAPPROVED --><a href="{searchresults.U_MCP_QUEUE}">{searchresults.UNAPPROVED_IMG}</a> <!-- ENDIF -->
 						<!-- IF searchresults.S_TOPIC_REPORTED --><a href="{searchresults.U_MCP_REPORT}"><span class="label label-important pull-right"><i class="icon-exclamation-sign icon-white"></i></span></a><!-- ENDIF --><br />
-						<!-- IF searchresults.PAGINATION --><strong class="p-pagination pull-right"><span>{searchresults.PAGINATION}</span></strong><!-- ENDIF -->
+						<!-- IF searchresults.PAGINATION --><strong class="pagination pull-right"><span>{searchresults.PAGINATION}</span></strong><!-- ENDIF -->
 						{L_POST_BY_AUTHOR} {searchresults.TOPIC_AUTHOR_FULL} &raquo; {searchresults.FIRST_POST_TIME} &raquo; {L_IN} <a href="{searchresults.U_VIEW_FORUM}">{searchresults.FORUM_TITLE}</a>
 					</td>
 					<td class="posts">{searchresults.TOPIC_REPLIES}</td>
@@ -165,7 +165,7 @@
 		</div>
 	<!-- ENDIF -->
 
-		<div class="pull-right p-pagination">
+		<div class="pull-right pagination">
 			<span class="label">{SEARCH_MATCHES}</span><!-- IF PAGINATION --> &bull; <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}"><span class="label">{PAGE_NUMBER}</span></a> &bull; <span class="label">{PAGINATION}</span><!-- ELSE --> &bull; <span class="label">{PAGE_NUMBER}</span><!-- ENDIF -->
 		</div>
 	</div>
