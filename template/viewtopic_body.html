@@ -115,19 +115,19 @@
 
 		<!-- IF not S_IS_BOT -->
 			<!-- IF postrow.U_EDIT or postrow.U_DELETE or postrow.U_REPORT or postrow.U_WARN or postrow.U_INFO or postrow.U_QUOTE -->
-				<ul class="profile-icons">
-					<!-- IF U_EMAIL_TOPIC --><li class="rightside"><a href="{U_EMAIL_TOPIC}" title="{L_EMAIL_TOPIC}" class="btn"><i class="icon-envelope"></i></a></li><!-- ENDIF -->
-				<!-- IF U_EMAIL_PM --><li class="rightside"><a href="{U_EMAIL_PM}" title="{L_EMAIL_PM}" class="btn"><i class="icon-envelope"></i></a></li></a></li><!-- ENDIF -->
-				<!-- IF U_PRINT_TOPIC --><li class="rightside"><a class="btn" href="{U_PRINT_TOPIC}" title="{L_PRINT_TOPIC}" accesskey="p" class="print"><i class="icon-print"></i></a></li></a></li><!-- ENDIF -->
-				<!-- IF U_PRINT_PM --><li class="rightside"><a class="btn" href="{U_PRINT_PM}" title="{L_PRINT_PM}" accesskey="p" class="print"><i class="icon-print"></i></a></li></a></li><!-- ENDIF -->
+				<div class="btn-group pull-right">
+					<!-- IF U_EMAIL_TOPIC --><a href="{U_EMAIL_TOPIC}" title="{L_EMAIL_TOPIC}" class="btn"><i class="icon-envelope"></i></a><!-- ENDIF -->
+				<!-- IF U_EMAIL_PM --><a href="{U_EMAIL_PM}" title="{L_EMAIL_PM}" class="btn"><i class="icon-envelope"></i></a><!-- ENDIF -->
+				<!-- IF U_PRINT_TOPIC --><a class="btn" href="{U_PRINT_TOPIC}" title="{L_PRINT_TOPIC}" accesskey="p" class="print"><i class="icon-print"></i></a><!-- ENDIF -->
+				<!-- IF U_PRINT_PM --><a class="btn" href="{U_PRINT_PM}" title="{L_PRINT_PM}" accesskey="p" class="print"><i class="icon-print"></i></a><!-- ENDIF -->
 
-					<!-- IF postrow.U_EDIT --><li class="edit"><a class="btn" href="{postrow.U_EDIT}" title="{L_EDIT_POST}"><i class="icon-pencil"></i></a></li><!-- ENDIF -->
-					<!-- IF postrow.U_DELETE --><li class="delete"><a class="btn" href="{postrow.U_DELETE}" title="{L_DELETE_POST}"><i class="icon-remove"></i></a></li><!-- ENDIF -->
-					<!-- IF postrow.U_REPORT --><li class="report"><a class="btn" href="{postrow.U_REPORT}" title="{L_REPORT_POST}"><i class="icon-exclamation-sign"></i></a></li><!-- ENDIF -->
-					<!-- IF postrow.U_WARN --><li class="warn"><a class="btn" href="{postrow.U_WARN}" title="{L_WARN_USER}"><i class="icon-minus-sign"></i></a></li><!-- ENDIF -->
-					<!-- IF postrow.U_INFO --><li class="info"><a class="btn" href="{postrow.U_INFO}" title="{L_INFORMATION}"><i class="icon-info-sign"></i></a></li><!-- ENDIF -->
-					<!-- IF postrow.U_QUOTE --><li><a class="btn" href="{postrow.U_QUOTE}" title="{L_REPLY_WITH_QUOTE}"><i class="icon-share-alt"></i></a></li><!-- ENDIF -->
-				</ul>
+					<!-- IF postrow.U_EDIT --><a class="btn" href="{postrow.U_EDIT}" title="{L_EDIT_POST}"><i class="icon-pencil"></i></a><!-- ENDIF -->
+					<!-- IF postrow.U_DELETE --><a class="btn" href="{postrow.U_DELETE}" title="{L_DELETE_POST}"><i class="icon-remove"></i></a><!-- ENDIF -->
+					<!-- IF postrow.U_REPORT --><a class="btn" href="{postrow.U_REPORT}" title="{L_REPORT_POST}"><i class="icon-exclamation-sign"></i></a><!-- ENDIF -->
+					<!-- IF postrow.U_WARN --><a class="btn" href="{postrow.U_WARN}" title="{L_WARN_USER}"><i class="icon-minus-sign"></i></a><!-- ENDIF -->
+					<!-- IF postrow.U_INFO --><a class="btn" href="{postrow.U_INFO}" title="{L_INFORMATION}"><i class="icon-info-sign"></i></a><!-- ENDIF -->
+					<!-- IF postrow.U_QUOTE --><a class="btn" href="{postrow.U_QUOTE}" title="{L_REPLY_WITH_QUOTE}"><i class="icon-share-alt"></i></a><!-- ENDIF -->
+				</div>
 			<!-- ENDIF -->
 		<!-- ENDIF -->
 
