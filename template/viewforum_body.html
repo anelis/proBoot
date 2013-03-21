@@ -159,9 +159,9 @@
 		<tbody class="topiclist topics">
 	<!-- ENDIF -->
 
-		<tr class="t-row<!-- IF topicrow.S_POST_GLOBAL --> warning-color<!-- ENDIF --><!-- IF topicrow.S_POST_ANNOUNCE --> info-color<!-- ENDIF --><!-- IF topicrow.S_POST_STICKY --> success-color<!-- ENDIF --><!-- IF topicrow.S_TOPIC_REPORTED --> danger-color<!-- ENDIF -->">
+		<tr class="t-row<!-- IF topicrow.S_POST_GLOBAL --> warning<!-- ENDIF --><!-- IF topicrow.S_POST_ANNOUNCE --> info<!-- ENDIF --><!-- IF topicrow.S_POST_STICKY --> success<!-- ENDIF --><!-- IF topicrow.S_TOPIC_REPORTED --> danger<!-- ENDIF -->">
 			
-				<td class="<!-- IF topicrow.S_POST_GLOBAL --> warning-color<!-- ENDIF --><!-- IF topicrow.S_POST_ANNOUNCE --> info-color<!-- ENDIF --><!-- IF topicrow.S_POST_STICKY --> success-color<!-- ENDIF --><!-- IF topicrow.S_TOPIC_REPORTED --> danger-color<!-- ENDIF -->"width="50%" <!-- IF topicrow.TOPIC_ICON_IMG and S_TOPIC_ICONS --> style="background-image: url({T_ICONS_PATH}{topicrow.TOPIC_ICON_IMG}); background-repeat: no-repeat;"<!-- ENDIF --> title="{topicrow.TOPIC_FOLDER_IMG_ALT}"><!-- IF topicrow.S_UNREAD_TOPIC --><a href="{topicrow.U_NEWEST_POST}">{NEWEST_POST_IMG}</a> <!-- ENDIF --><!-- IF topicrow.S_POST_GLOBAL --><span class="label label-warning pull-right hidden-phone">GLOBAL</span> <!-- ENDIF --><!-- IF topicrow.S_POST_ANNOUNCE --><span class="label label-info pull-right hidden-phone">ANNOUNCEMENT</span> <!-- ENDIF --><!-- IF topicrow.S_POST_STICKY --><span class="label label-success pull-right hidden-phone">STICKY</span> <!-- ENDIF --><i class="pcon {topicrow.TOPIC_IMG_STYLE}"></i><a href="{topicrow.U_VIEW_TOPIC}" class="topictitle"> {topicrow.TOPIC_TITLE}</a>
+				<td width="50%" <!-- IF topicrow.TOPIC_ICON_IMG and S_TOPIC_ICONS --> style="background-image: url({T_ICONS_PATH}{topicrow.TOPIC_ICON_IMG}); background-repeat: no-repeat;"<!-- ENDIF --> title="{topicrow.TOPIC_FOLDER_IMG_ALT}"><!-- IF topicrow.S_UNREAD_TOPIC --><a href="{topicrow.U_NEWEST_POST}">{NEWEST_POST_IMG}</a> <!-- ENDIF --><!-- IF topicrow.S_POST_GLOBAL --><span class="label label-warning pull-right hidden-phone">GLOBAL</span> <!-- ENDIF --><!-- IF topicrow.S_POST_ANNOUNCE --><span class="label label-info pull-right hidden-phone">ANNOUNCEMENT</span> <!-- ENDIF --><!-- IF topicrow.S_POST_STICKY --><span class="label label-success pull-right hidden-phone">STICKY</span> <!-- ENDIF --><i class="pcon {topicrow.TOPIC_IMG_STYLE}"></i><a href="{topicrow.U_VIEW_TOPIC}" class="topictitle"> {topicrow.TOPIC_TITLE}</a>
 					<!-- IF topicrow.S_TOPIC_UNAPPROVED or topicrow.S_POSTS_UNAPPROVED --><a href="{topicrow.U_MCP_QUEUE}">{topicrow.UNAPPROVED_IMG}</a> <!-- ENDIF -->
 					<!-- IF topicrow.S_TOPIC_REPORTED --><a href="{topicrow.U_MCP_REPORT}"><span class="label label-important pull-right"><i class="icon-exclamation-sign icon-white"></i></span></a><!-- ENDIF --><br />
 					
@@ -169,9 +169,9 @@
 					<!-- IF topicrow.S_POST_GLOBAL and FORUM_ID != topicrow.FORUM_ID --> &raquo; {L_IN} <a href="{topicrow.U_VIEW_FORUM}">{topicrow.FORUM_NAME}</a><!-- ENDIF -->
 					<!-- IF topicrow.PAGINATION --><div class="pagination pull-right"><ul>{topicrow.PAGINATION}</ul></div><!-- ENDIF -->
 				</td>
-				<td class="posts<!-- IF topicrow.S_POST_GLOBAL --> warning-color<!-- ENDIF --><!-- IF topicrow.S_POST_ANNOUNCE --> info-color<!-- ENDIF --><!-- IF topicrow.S_POST_STICKY --> success-color<!-- ENDIF --><!-- IF topicrow.S_TOPIC_REPORTED --> danger-color<!-- ENDIF -->"><center><span class="badge">{topicrow.REPLIES}</span></center></td>
-				<td class="views<!-- IF topicrow.S_POST_GLOBAL --> warning-color<!-- ENDIF --><!-- IF topicrow.S_POST_ANNOUNCE --> info-color<!-- ENDIF --><!-- IF topicrow.S_POST_STICKY --> success-color<!-- ENDIF --><!-- IF topicrow.S_TOPIC_REPORTED --> danger-color<!-- ENDIF -->"><center><span class="badge">{topicrow.VIEWS}</span></center></td>
-				<td class="lastpost<!-- IF topicrow.S_POST_GLOBAL --> warning-color<!-- ENDIF --><!-- IF topicrow.S_POST_ANNOUNCE --> info-color<!-- ENDIF --><!-- IF topicrow.S_POST_STICKY --> success-color<!-- ENDIF --><!-- IF topicrow.S_TOPIC_REPORTED --> danger-color<!-- ENDIF -->"><span class="hidden-phone"><def><a href="{topicrow.U_LAST_POST}">{topicrow.LAST_POST_SUBJECT}</a> </def>{L_POST_BY_AUTHOR} </span>{topicrow.LAST_POST_AUTHOR_FULL}
+				<td class="posts"><center><span class="badge">{topicrow.REPLIES}</span></center></td>
+				<td class="views"><center><span class="badge">{topicrow.VIEWS}</span></center></td>
+				<td class="lastpost"><span class="hidden-phone"><def><a href="{topicrow.U_LAST_POST}">{topicrow.LAST_POST_SUBJECT}</a> </def>{L_POST_BY_AUTHOR} </span>{topicrow.LAST_POST_AUTHOR_FULL}
 					<!-- IF not S_IS_BOT --><a href="{topicrow.U_LAST_POST}">{LAST_POST_IMG}</a> <!-- ENDIF --><br />{topicrow.LAST_POST_TIME}
 				</td>
 			
