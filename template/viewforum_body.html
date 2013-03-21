@@ -53,10 +53,10 @@
 	
 	
 	<!-- IF PAGINATION or TOTAL_POSTS or TOTAL_TOPICS -->
-		<div class="p-pagination span4">
+		<div class="pagination span4">
 			<center><!-- IF not S_IS_BOT and U_MARK_TOPICS --><a class="btn btn-mini" href="{U_MARK_TOPICS}" accesskey="m"><i class="icon-check"></i> {L_MARK_TOPICS_READ}</a> &bull; <!-- ENDIF --><!-- IF TOTAL_TOPICS --><span class="label">{TOTAL_TOPICS}</span><!-- ENDIF -->
 			<!-- IF PAGE_NUMBER -->
-				<!-- IF PAGINATION --> <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}"> &bull; <span class="label">{PAGE_NUMBER}</span></a> &bull; <span>{PAGINATION}</span><!-- ELSE --> &bull; <span class="label">{PAGE_NUMBER}</span><!-- ENDIF -->
+				<!-- IF PAGINATION --> <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}"> &bull; <span class="label">{PAGE_NUMBER}</span></a> &bull; <ul>{PAGINATION}</ul><!-- ELSE --> &bull; <span class="label">{PAGE_NUMBER}</span><!-- ENDIF -->
 			<!-- ENDIF -->
 			</center>
 		</div>
@@ -232,7 +232,7 @@
 		<div class="p-pagination span4">
 			<center><!-- IF not S_IS_BOT and U_MARK_TOPICS --><a class="btn btn-mini" href="{U_MARK_TOPICS}" accesskey="m"><i class="icon-check"></i> {L_MARK_TOPICS_READ}</a> &bull; <!-- ENDIF --><!-- IF TOTAL_TOPICS --><span class="label">{TOTAL_TOPICS}</span><!-- ENDIF -->
 			<!-- IF PAGE_NUMBER -->
-				<!-- IF PAGINATION --> <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}"> &bull; <span class="label label-info">{PAGE_NUMBER}</span></a> &bull; <span>{PAGINATION}</span><!-- ELSE --> &bull; <span class="label">{PAGE_NUMBER}</span><!-- ENDIF -->
+				<!-- IF PAGINATION --> <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}"> &bull; <span class="label label-info">{PAGE_NUMBER}</span></a> &bull; <ul>{PAGINATION}</ul><!-- ELSE --> &bull; <span class="label">{PAGE_NUMBER}</span><!-- ENDIF -->
 			<!-- ENDIF -->
 			</center>
 		</div>
