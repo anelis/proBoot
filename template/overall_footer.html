@@ -42,17 +42,25 @@
 </div>
 
 
-	<div class="navbar navbar-fixed-bottom visible-desktop">
+	<div class="navbar navbar-inverse navbar-fixed-bottom visible-desktop">
 		<div class="navbar-inner">
 		<div class="container-fluid">
 		<ul class="nav">
-			<li><a href="{U_INDEX}" accesskey="h"><i class="icon-home icon-white"></i> {L_INDEX}</a></li>
-				<!-- IF not S_IS_BOT -->
-					<!-- IF S_WATCH_FORUM_LINK --><li><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}"><i class="icon-white <!-- IF S_WATCHING_FORUM -->icon-eye-close<!-- ELSE -->icon-eye-open<!-- ENDIF -->"></i> {S_WATCH_FORUM_TITLE}</a></li> <!-- ENDIF -->
-					<!-- IF U_WATCH_TOPIC --><li><a href="{U_WATCH_TOPIC}" title="{L_WATCH_TOPIC}"><i class="icon-white <!-- IF S_WATCHING_TOPIC -->icon-eye-close<!-- ELSE -->icon-eye-open<!-- ENDIF -->>"></i> {L_WATCH_TOPIC}</a></li><!-- ENDIF -->
-					<!-- IF U_BOOKMARK_TOPIC --><li><a href="{U_BOOKMARK_TOPIC}" title="{L_BOOKMARK_TOPIC}"><i class="icon-white icon-bookmark"></i> {L_BOOKMARK_TOPIC}</a></li><!-- ENDIF -->
-					<!-- IF U_BUMP_TOPIC --><li><a href="{U_BUMP_TOPIC}" title="{L_BUMP_TOPIC}"><i class="icon-bullhorn icon-white"></i> {L_BUMP_TOPIC}</a></li><!-- ENDIF -->
-				<!-- ENDIF -->
+            <li><a href="{U_INDEX}" accesskey="h"><i class="icon-home icon-white"></i> {L_INDEX}</a></li>
+            <!-- IF not S_IS_BOT -->
+            <li class="dropup">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    {OPTIONS}...
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<!-- IF S_WATCH_FORUM_LINK --><li><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}"><i class="<!-- IF S_WATCHING_FORUM -->icon-eye-close<!-- ELSE -->icon-eye-open<!-- ENDIF -->"></i> {S_WATCH_FORUM_TITLE}</a></li> <!-- ENDIF -->
+					<!-- IF U_WATCH_TOPIC --><li><a href="{U_WATCH_TOPIC}" title="{L_WATCH_TOPIC}"><i class="<!-- IF S_WATCHING_TOPIC -->icon-eye-close<!-- ELSE -->icon-eye-open<!-- ENDIF -->"></i> {L_WATCH_TOPIC}</a></li><!-- ENDIF -->
+					<!-- IF U_BOOKMARK_TOPIC --><li><a href="{U_BOOKMARK_TOPIC}" title="{L_BOOKMARK_TOPIC}"><i class="icon-bookmark"></i> {L_BOOKMARK_TOPIC}</a></li><!-- ENDIF -->
+					<!-- IF U_BUMP_TOPIC --><li><a href="{U_BUMP_TOPIC}" title="{L_BUMP_TOPIC}"><i class="icon-bullhorn"></i> {L_BUMP_TOPIC}</a></li><!-- ENDIF -->
+                </ul>
+            </li>
+            <!-- ENDIF -->
         </ul>
         <ul class="nav pull-right">
 			<!-- IF U_TEAM --><li><a href="{U_TEAM}"><i class="icon-globe icon-white"></i> {L_THE_TEAM}</a></li><!-- ENDIF -->
